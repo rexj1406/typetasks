@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TypeTasks - Task Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>TypeTasks</h1>
+    <p class="subtitle">A type-safe task tracker built with TypeScript.</p>
+
+    <!-- Input Section -->
+    <div class="addrow">
+      <input id="title" type="text" placeholder="Add a task…" />
+      <button id="add">Add Task</button>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="todo">Todo</button>
+      <button class="filter-btn" data-filter="in-progress">In-Progress</button>
+      <button class="filter-btn" data-filter="done">Done</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="list" class="task-list"></ul>
+  </div>
+
+  <!-- Load compiled JavaScript as module -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
