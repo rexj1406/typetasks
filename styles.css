@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.wrap {
+  max-width: 550px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.addrow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#title {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+#title:focus {
+  border-color: #6c5ce7;
+}
+
+#add {
+  background: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+#add:hover {
+  background: #5a4bcf;
+}
+
+.filter-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  background: #eef2f7;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.filter-btn.active {
+  background: #6c5ce7;
+  color: #fff;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #eef2f7;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fff;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.badge.todo { background: #ffeaa7; color: #d63031; }
+.badge.in-progress { background: #74b9ff; color: #0984e3; }
+.badge.done { background: #55efc4; color: #00b894; }
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.action-btn {
+  background: #f1f2f6;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.action-btn.delete {
+  color: #e74c3c;
+}
